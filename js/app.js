@@ -26,6 +26,8 @@ var app = {
         'use strict';
 
         length.init();
+        weight.init();
+//        area.init();
     },
 
     /**

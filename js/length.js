@@ -33,7 +33,6 @@ var length = {
         });
     },
     generateView: function generateView(){
-    	
     	for(var i=0;i<this.datas.length;++i){
     		var opt = document.createElement('option');
     	    opt.value = i;
@@ -41,17 +40,17 @@ var length = {
     	    this.dropdown_length.appendChild(opt);
     	    
     	    var li_form=document.createElement('li');
-    	    li_form.innerHTML = this.datas[i]+"<span class='li-text-sub' id='result_"+i+"'>"+(1*Math.pow(10,i)).toLocaleString()+"</span>";
+    	    li_form.innerHTML = this.datas[i]+"<span class='li-text-sub' id='result_length"+i+"'></span>";
     	    li_form.setAttribute("class", "ui-li-static");
     	    this.body_length.appendChild(li_form);
     	}
-    	
+    	this.refreshResult();
     },
     refreshResult: function refreshResult(){
     	'use strict';
     	
     	for(var i=0;i< this.datas.length;++i){
-    	   var row_unit=document.getElementById('result_'+i);
+    	   var row_unit=document.getElementById('result_length'+i);
     	   row_unit.innerHTML = this.enteredValue * Math.pow(10, (i - this.selectedUnit));
     	}
     },

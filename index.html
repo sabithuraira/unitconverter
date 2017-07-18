@@ -23,7 +23,7 @@
 				<div class="ui-tabbar">
 					<ul>
 						<li class="ui-li-anchor"><a href="#" class="ui-tab-active">Length</a></li>
-						<li class="ui-li-anchor"><a href="#">Area</a></li>
+						<!-- <li class="ui-li-anchor"><a href="#">Area</a></li> -->
 						<li class="ui-li-anchor"><a href="#">Weight</a></li>
 						<li class="ui-li-anchor"><a href="#">Volume</a></li>
 						<li class="ui-li-anchor"><a href="#">Speed</a></li>
@@ -38,22 +38,29 @@
 								<li class="ui-li-static">
 									<input type="number" id="form_length" value="1">
 									<span class="li-text-sub">
-										<select id="dropdown_length" data-native-menu="false" data-inline="true"></select>
+										<select id="dropdown_length" name="dropdown_lengt" data-native-menu="false" data-inline="true"></select>
 									</span>
 								</li>
 							</ul>
 						</section>
-						<section>
-							<ul class="ui-listview">
-								<li class="ui-li-anchor"><a href="#">List 1</a></li>
-								<li class="ui-li-anchor"><a href="#">List 2</a></li>
+						<!-- <section>
+							<ul id="body_area" class="ui-listview">
+								<li class="ui-li-static">
+									<input type="number" id="form_area" value="1">
+									<span class="li-text-sub">
+										<select id="dropdown_area" data-native-menu="false" data-inline="true"></select>
+									</span>
+								</li>
 							</ul>
-						</section>
+						</section> -->
 						<section>
-							<ul class="ui-listview">
-								<li class="ui-li-anchor"><a href="#">List 1</a></li>
-								<li class="ui-li-anchor"><a href="#">List 2</a></li>
-								<li class="ui-li-anchor"><a href="#">List 3</a></li>
+							<ul id="body_weight" class="ui-listview">
+								<li class="ui-li-static">
+									<input type="number" id="form_weight" value="1">
+									<span class="li-text-sub">
+										<select id="dropdown_weight" name="dropdown_weight"></select>
+									</span>
+								</li>
 							</ul>
 						</section>
 						<section>
