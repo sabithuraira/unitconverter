@@ -6,7 +6,8 @@ var length = {
         	
         this.selectedUnit=0;
         this.enteredValue=1;
-    	this.datas=["mm", "cm", "dm", "m", "dam", "hm", "km"];
+    	this.datas=["mm", "cm", "dm", "m", "dam", "hm", "km", "inch", "ft", "yd", "mile"];
+    	this.unit=[1, 10, 100, 1000, 10000, 100000, 1000000, 25.4, 304.8, 914.4, 1609344];
         
         this.form_length=document.getElementById('form_length');
         this.dropdown_length=document.getElementById("dropdown_length");
@@ -51,7 +52,7 @@ var length = {
     	
     	for(var i=0;i< this.datas.length;++i){
     	   var row_unit=document.getElementById('result_length'+i);
-    	   row_unit.innerHTML = this.enteredValue * Math.pow(10, (i - this.selectedUnit));
+    	   row_unit.innerHTML = this.enteredValue * this.unit[this.selectedUnit]  /  this.unit[i] ;
     	}
     },
     

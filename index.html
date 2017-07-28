@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no"/>
 	<link rel="stylesheet" href="./lib/tau/mobile/theme/default/tau.css">
 	<link rel="stylesheet" href="./css/style.css">
-	<title>Tizen ui</title>
+	<title>Unit Converter</title>
 
 	<!-- for compatibility test -->
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -23,11 +23,9 @@
 				<div class="ui-tabbar">
 					<ul>
 						<li class="ui-li-anchor"><a href="#" class="ui-tab-active">Length</a></li>
-						<!-- <li class="ui-li-anchor"><a href="#">Area</a></li> -->
 						<li class="ui-li-anchor"><a href="#">Weight</a></li>
-						<li class="ui-li-anchor"><a href="#">Volume</a></li>
-						<li class="ui-li-anchor"><a href="#">Speed</a></li>
-						<li class="ui-li-anchor"><a href="#">File Size</a></li>
+						<li class="ui-li-anchor"><a href="#">Time</a></li>
+						<li class="ui-li-anchor"><a href="#">File</a></li>
 					</ul>
 				</div>
 				<div class="ui-section-changer" id="sectionChanger">
@@ -64,11 +62,24 @@
 							</ul>
 						</section>
 						<section>
-							<ul class="ui-listview">
-								<li class="ui-li-anchor"><a href="#">List 1</a></li>
-								<li class="ui-li-anchor"><a href="#">List 2</a></li>
-								<li class="ui-li-anchor"><a href="#">List 3</a></li>
-								<li class="ui-li-anchor"><a href="#">List 4</a></li>
+							<ul id="body_time" class="ui-listview">
+								<li class="ui-li-static">
+									<input type="number" id="form_time" value="1">
+									<span class="li-text-sub">
+										<select id="dropdown_time" name="dropdown_time"></select>
+									</span>
+								</li>
+							</ul>
+						</section>
+						
+						<section>
+							<ul id="body_file" class="ui-listview">
+								<li class="ui-li-static">
+									<input type="number" id="form_file" value="1">
+									<span class="li-text-sub">
+										<select id="dropdown_file" name="dropdown_file"></select>
+									</span>
+								</li>
 							</ul>
 						</section>
 					</div>
@@ -80,6 +91,8 @@
 	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
 	<script src="js/app.js"></script>
 	
+    <script src="js/time.js"></script>
+    <script src="js/file.js"></script>
     <script src="js/area.js"></script>
     <script src="js/filesize.js"></script>
     <script src="js/length.js"></script>

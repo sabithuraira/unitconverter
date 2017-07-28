@@ -2,10 +2,11 @@
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://farifam.com/unitconverter" version="0.1.0" viewmodes="maximized">
     <access origin="*"></access>
     <tizen:application id="gH0BfR6qh4.unitconverter" package="gH0BfR6qh4" required_version="2.4"/>
+    <author href="http://www.farifam.com" email="sabitzhabit@gmail.com">Farifam</author>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="shuffle.png"/>
-    <name>unitconverter</name>
+    <name>Unit Converter</name>
     <tizen:privilege name="http://tizen.org/privilege/fullscreen"/>
     <tizen:profile name="mobile"/>
 </widget>

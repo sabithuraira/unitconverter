@@ -27,6 +27,8 @@ var app = {
 
         length.init();
         weight.init();
+        time.init();
+        file.init();
 //        area.init();
     },
 
